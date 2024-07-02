@@ -1,6 +1,6 @@
-import { useState } from 'react'
+
 import Navbar from './components/Navbar'
-import Main from './components/Main'
+import MainContainer from './components/MainContainer'
 import Category from './components/Category'
 import { Routes, Route } from 'react-router-dom'
 import Fruits from './components/Fruits'
@@ -10,7 +10,7 @@ import Meat from './components/Meat'
 import Bakery from './components/Bakery'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -18,12 +18,12 @@ function App() {
       className="bg-gradient-to-r from-slate-300 to-green-900
       bg-cover bg-center bg-no-repeat">
         <Navbar/>
-        <Main/>
+        <MainContainer/>
       </div>
       <div>
          <Category/> 
           <Routes>
-            <Route path='fruits' element={<Fruits/>}/>
+            <Route path='/' element={<Fruits/>}/>
             <Route path='bakery' element={<Bakery/>}/>
             <Route path='meat' element={<Meat/>}/>
             <Route path='beverage' element={<Beverage/>}/>

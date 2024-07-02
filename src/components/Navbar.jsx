@@ -7,7 +7,7 @@ import { IoMdSearch } from "react-icons/io";
 function Navbar() {
   return (
     <div className='flex items-center justify-between p-8'>
-        <h1 className='text-xl'> GO <span className='font-bold'>FOOD</span></h1>
+        <h1 className='text-2xl'> GO <span className='font-bold'>FOOD</span></h1>
 
         <div className='flex gap-10 font-medium'>
            <p className='flex items-center gap-1'>Home <IoIosArrowDown /></p>

@@ -2,9 +2,9 @@ import React from 'react'
 import {IoIosArrowRoundForward} from "react-icons/io";
 
 
-function Main() {
+function MainContainer() {
   return (
-    <div className='px-10 pb-10 mt-20 flex justify-center gap-20'>
+    <div className='px-10 pb-20 mt-16 flex justify-center gap-40'>
 
         <div className='LEFT w-[70%] flex flex-col gap-20'>
             <div className='flex flex-col gap-6'>
@@ -19,12 +19,12 @@ function Main() {
             </div>
         </div>
 
-        <div className='RIGHT '>
-          <img className='w-[80%] border border-none rounded-full h-auto'
+        <div className='RIGHT w-[60%] '>
+          <img className='w-96 h-96 border border-none rounded-full '
           src='https://hips.hearstapps.com/hmg-prod/images/pasta-salad-horizontal-jpg-1522265695.jpg?crop=0.8890666666666666xw:1xh;center,top&resize=1200:*'/>
         </div>
     </div>
   )
 }
 
-export default Main
+export default MainContainer
